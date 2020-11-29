@@ -56,7 +56,7 @@ public:
         crearEmpleadosPredeterminados();
     }
 
-    void init(){
+    void menu(){
         string opcion = "1";
         while (opcion !=  "no"){
             cout << "\nBienvenido al menu de empleados" << endl;
@@ -119,8 +119,5 @@ public:
             cout <<"Sueldo: "<< empleado.getSueldo()<< endl;
         }
     }
-
 };
-
-
 #endif //PROYECTOFINAL_EMPLEADOVIEW_H

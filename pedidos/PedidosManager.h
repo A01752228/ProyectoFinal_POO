@@ -1,7 +1,3 @@
-//
-// Created by ferna on 11/27/2020.
-//
-
 #ifndef PROYECTOFINAL_PEDIDOSMANAGER_H
 #define PROYECTOFINAL_PEDIDOSMANAGER_H
 
@@ -21,13 +17,13 @@ public:
         lastId = 1;
     }
 
-    string hacerPedido(const Producto& productoApedir, const string& fechaDePedido){
+    string hacerPedido(const Producto& productoApedir, const string& fechaDeEntrega){
         Pedido pedido = Pedido();
         pedido.setId(lastId);
         ++lastId;
         
         pedido.setProducto(productoApedir);
-        pedido.setFechaEntrega(fechaDePedido);
+        pedido.setFechaEntrega(fechaDeEntrega);
         pedido.setStatus("En camino");
         pedidos.push_back(pedido);
         
@@ -49,6 +45,7 @@ public:
             }
         }
     }
+
     vector<Pedido> verPedidosPorEstado(const string& estadoDelPedido){
         vector<Pedido> pedidosPorEstado;
         for (int i = 0; i < pedidos.size(); ++i) {
@@ -58,13 +55,5 @@ public:
         }
         return pedidosPorEstado;
     }
-
-    const vector<Pedido> &getPedidos() const {
-        return pedidos;
-    }
-
-
 };
-
-
 #endif //PROYECTOFINAL_PEDIDOSMANAGER_H

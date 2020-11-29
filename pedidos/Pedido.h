@@ -1,7 +1,3 @@
-//
-// Created by ferna on 11/27/2020.
-//
-
 #ifndef PROYECTOFINAL_PEDIDO_H
 #define PROYECTOFINAL_PEDIDO_H
 

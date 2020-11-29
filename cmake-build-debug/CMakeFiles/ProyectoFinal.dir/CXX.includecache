@@ -6,57 +6,57 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/Empleado.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/Empleado.h
 string
 -
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/EmpleadoView.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/EmpleadoView.h
 Empleado.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/Empleado.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/Empleado.h
 RecursosHumanosManager.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/RecursosHumanosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/RecursosHumanosManager.h
 iostream
 -
 string
 -
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/RecursosHumanosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/RecursosHumanosManager.h
 vector
 -
 Empleado.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/Empleado.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/Empleado.h
 iostream
 -
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/main.cpp
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/main.cpp
 iostream
 -
 empleado/RecursosHumanosManager.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/RecursosHumanosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/RecursosHumanosManager.h
 empleado/EmpleadoView.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/empleado/EmpleadoView.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/EmpleadoView.h
 pedidos/PedidosView.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/PedidosView.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosView.h
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/Pedido.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Pedido.h
 string
 -
 vector
 -
 Producto.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/Producto.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Producto.h
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/PedidosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosManager.h
 string
 -
 vector
 -
 Pedido.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/Pedido.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Pedido.h
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/PedidosView.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosView.h
 PedidosManager.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/PedidosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosManager.h
 string
 -
 iostream
@@ -64,15 +64,15 @@ iostream
 vector
 -
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/pedidos/Producto.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Producto.h
 string
 -
 vector
 -
 ../proveedor/Proveedor.h
-C:/Users/ferna/CLionProjects/ProyectoFinal/proveedor/Proveedor.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Proveedor.h
 
-C:/Users/ferna/CLionProjects/ProyectoFinal/proveedor/Proveedor.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Proveedor.h
 string
 -
 
