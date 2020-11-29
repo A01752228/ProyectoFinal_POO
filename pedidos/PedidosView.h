@@ -10,6 +10,7 @@ using namespace std;
 class PedidosView {
 private:
     PedidosManager pedidosManager;
+    Inventario inventario;
     void pedidosPredeterminados(){
         Producto prod1 = Producto();
         prod1.setNombreProducto("Pantene");
@@ -50,11 +51,12 @@ public:
             cout << "\t Nombre del producto: "<<pedidosConsultado.getProducto().getNombreProducto();
             cout << "\t Cantidad: "<<pedidosConsultado.getProducto().getCantidad()<<endl;
         }
-
     }
+
     PedidosView() {
         pedidosManager = PedidosManager();
         pedidosPredeterminados();
+        inventario = Inventario();
     }
     void menu(){
         string opcion;
@@ -90,10 +92,15 @@ public:
                 pedidosManager.hacerPedido(prod,"Viernes");
             }
             if (opcion == "4"){
+                vector<Producto> producto = inventario.getProductos();
+                for (int i = 0; i < producto.size(); ++i) {
+                    cout << "-------------------"<<endl;
+                    cout << "Nombre: "<<producto.at(i).getNombreProducto()<<endl;
+                    cout << "Cantidad: "<<producto.at(i).getCantidad()<<endl;
+                }
              cout << "Mostrar inventario";
             }
         }
     }
-
 };
 #endif //PROYECTOFINAL_PEDIDOSVIEW_H

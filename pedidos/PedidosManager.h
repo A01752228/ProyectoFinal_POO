@@ -4,12 +4,14 @@
 #include <string>
 #include <vector>
 #include "Pedido.h"
+#include "../proveedor/Inventario.h"
 
 using namespace std;
 
 class PedidosManager {
 
 private:
+    Inventario inventario;
     vector <Pedido> pedidos;
     long lastId;
 public:
@@ -39,7 +41,11 @@ public:
         for (int i = 0; i < pedidos.size(); ++i) {
             if (pedidos.at(i).getId() == id){
                 pedidos.at(i).setStatus(nuevoEstado);
+                if (nuevoEstado == "Recibido"){
+                    inventario.agregarProducto();
+                }
             }
+
         }
     }
     vector<Pedido> verPedidosPorEstado(const string& estadoDelPedido){

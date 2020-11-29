@@ -1,18 +1,19 @@
 #ifndef PROYECTOFINAL_INVENTARIO_H
 #define PROYECTOFINAL_INVENTARIO_H
-#include <vector>
-#include "../pedidos/PedidosManager.h"
-#include "../pedidos/PedidosView.h"
 #include "../pedidos/Producto.h"
-using namespace std;
-
+#include <vector>
 class Inventario {
 private:
-
+    vector<Producto> productos;
 public:
-    void recibirPedido(){
-    
+    const vector<Producto> &getProductos() const {
+        return productos;
+    }
 
+    void agregarProducto(Producto producto){
+        productos.push_back(producto);
     }
 };
+
+
 #endif //PROYECTOFINAL_INVENTARIO_H
