@@ -15,9 +15,12 @@ private:
     vector <Pedido> pedidos;
     long lastId;
 public:
-    PedidosManager() {
+    PedidosManager(Inventario inventario1) {
         lastId = 1;
+        inventario = inventario1;
     }
+
+
     string hacerPedido(const Producto& productoApedir, const string& fechaDeEntrega){
         Pedido pedido = Pedido();
         pedido.setId(lastId);
@@ -41,11 +44,7 @@ public:
         for (int i = 0; i < pedidos.size(); ++i) {
             if (pedidos.at(i).getId() == id){
                 pedidos.at(i).setStatus(nuevoEstado);
-                if (nuevoEstado == "Recibido"){
-                    inventario.agregarProducto();
-                }
             }
-
         }
     }
     vector<Pedido> verPedidosPorEstado(const string& estadoDelPedido){
@@ -56,6 +55,14 @@ public:
             }
         }
         return pedidosPorEstado;
+    }
+
+    Producto getProductoDePedidoPorId(long id) {
+        for (int i = 0; i < pedidos.size(); ++i) {
+            if (pedidos.at(i).getId() == id){
+                return pedidos.at(i).getProducto();
+            }
+        }
     }
 };
 #endif //PROYECTOFINAL_PEDIDOSMANAGER_H

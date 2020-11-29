@@ -11,9 +11,15 @@ public:
     }
 
     void agregarProducto(Producto producto){
-        productos.push_back(producto);
+        for (int i = 0; i < productos.size(); ++i) {
+            if (productos.at(i).getNombreProducto() == producto.getNombreProducto()){
+                int cantidad;
+                cantidad = productos.at(i).getCantidad() + producto.getCantidad();
+                productos.at(i).setCantidad(cantidad);
+                return;
+            }
+        }
+            productos.push_back(producto);
     }
 };
-
-
 #endif //PROYECTOFINAL_INVENTARIO_H

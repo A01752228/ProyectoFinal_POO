@@ -22,7 +22,7 @@ int main() {
         empleadoView.menu();
     }
     if (opcion == 2){
-        PedidosView pedidosView = PedidosView();
+        PedidosView pedidosView = PedidosView(PedidosManager(Inventario()));
         pedidosView.menu();
     }
     else

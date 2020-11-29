@@ -19,7 +19,7 @@ private:
         pedidosManager.hacerPedido(prod1,"Lunes");
 
         Producto prod2 = Producto();
-        prod2.setNombreProducto("Jabon");
+        prod2.setNombreProducto("Pantene");
         prod2.setPrecio(30);
         prod2.setCantidad(20);
         pedidosManager.hacerPedido(prod2,"Martes");
@@ -53,10 +53,10 @@ public:
         }
     }
 
-    PedidosView() {
-        pedidosManager = PedidosManager();
-        pedidosPredeterminados();
+    PedidosView(PedidosManager pedidosManager) : pedidosManager(pedidosManager) {
         inventario = Inventario();
+        pedidosManager = PedidosManager(inventario);
+        pedidosPredeterminados();
     }
     void menu(){
         string opcion;
@@ -79,6 +79,11 @@ public:
                 cout << "Dame el estatus del pedido (En camino, Recibido)" << endl;
                 cin >> status;
                 pedidosManager.cambiarEstadoDePedido(id, status);
+
+                if (status == "Recibido"){
+                    Producto producto = pedidosManager.getProductoDePedidoPorId(id);
+                    inventario.agregarProducto(producto);
+                }
             }
             if (opcion == "3"){
                 string nombre;
@@ -98,7 +103,6 @@ public:
                     cout << "Nombre: "<<producto.at(i).getNombreProducto()<<endl;
                     cout << "Cantidad: "<<producto.at(i).getCantidad()<<endl;
                 }
-             cout << "Mostrar inventario";
             }
         }
     }
