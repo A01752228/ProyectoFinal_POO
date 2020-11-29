@@ -19,7 +19,7 @@ private:
         pedidosManager.hacerPedido(prod1,"Lunes");
 
         Producto prod2 = Producto();
-        prod2.setNombreProducto("Pantene");
+        prod2.setNombreProducto("Jabon");
         prod2.setPrecio(30);
         prod2.setCantidad(20);
         pedidosManager.hacerPedido(prod2,"Martes");
@@ -42,6 +42,14 @@ private:
         prod5.setCantidad(70);
         pedidosManager.hacerPedido(prod5,"Jueves");
     }
+
+    void productosPredeterminados(){
+            Producto prod1 = Producto();
+            prod1.setNombreProducto("Playeras");
+            prod1.setCantidad(40);
+            prod1.setPrecio(200);
+            inventario.agregarProducto(prod1);
+        }
 public:
     void verPedidosEnCamino(){
         vector<Pedido> pedidosConsultados = pedidosManager.verPedidosPorEstado("En camino");
@@ -97,11 +105,14 @@ public:
                 pedidosManager.hacerPedido(prod,"Viernes");
             }
             if (opcion == "4"){
+                productosPredeterminados();
                 vector<Producto> producto = inventario.getProductos();
                 for (int i = 0; i < producto.size(); ++i) {
                     cout << "-------------------"<<endl;
                     cout << "Nombre: "<<producto.at(i).getNombreProducto()<<endl;
                     cout << "Cantidad: "<<producto.at(i).getCantidad()<<endl;
+                    cout << "Precio: "<<producto.at(i).getPrecio()<<endl;
+                    cout << "-------------------\n"<<endl;
                 }
             }
         }

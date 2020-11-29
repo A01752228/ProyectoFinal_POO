@@ -5,6 +5,7 @@
 class Inventario {
 private:
     vector<Producto> productos;
+
 public:
     const vector<Producto> &getProductos() const {
         return productos;
