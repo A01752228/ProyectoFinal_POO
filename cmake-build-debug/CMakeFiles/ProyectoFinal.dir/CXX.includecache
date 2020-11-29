@@ -19,6 +19,8 @@ iostream
 -
 string
 -
+cstdlib
+-
 
 C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/empleado/RecursosHumanosManager.h
 vector
@@ -57,6 +59,8 @@ C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Pedido.h
 C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosView.h
 PedidosManager.h
 C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosManager.h
+../proveedor/Inventario.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Inventario.h
 string
 -
 iostream
@@ -71,6 +75,16 @@ vector
 -
 ../proveedor/Proveedor.h
 C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Proveedor.h
+
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Inventario.h
+vector
+-
+../pedidos/PedidosManager.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosManager.h
+../pedidos/PedidosView.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/PedidosView.h
+../pedidos/Producto.h
+C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Producto.h
 
 C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Proveedor.h
 string

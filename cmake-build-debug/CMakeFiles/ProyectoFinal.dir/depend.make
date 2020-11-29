@@ -9,5 +9,6 @@ CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../pedidos/Pedido.h
 CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../pedidos/PedidosManager.h
 CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../pedidos/PedidosView.h
 CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../pedidos/Producto.h
+CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../proveedor/Inventario.h
 CMakeFiles/ProyectoFinal.dir/main.cpp.obj: ../proveedor/Proveedor.h
 

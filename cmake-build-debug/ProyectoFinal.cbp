@@ -104,6 +104,9 @@
 		<Unit filename="C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/pedidos/Producto.h">
 			<Option target="ProyectoFinal"/>
 		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Inventario.h">
+			<Option target="ProyectoFinal"/>
+		</Unit>
 		<Unit filename="C:/Users/DELL/Documents/GitHub/ProyectoFinal_POO/proveedor/Proveedor.h">
 			<Option target="ProyectoFinal"/>
 		</Unit>

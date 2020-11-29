@@ -1,4 +1,3 @@
-
 #ifndef PROYECTOFINAL_PRODUCTO_H
 #define PROYECTOFINAL_PRODUCTO_H
 #include <string>
@@ -57,6 +56,4 @@ public:
         Producto::proveedores = proveedores;
     }
 };
-
-
 #endif //PROYECTOFINAL_PRODUCTO_H

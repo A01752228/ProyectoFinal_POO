@@ -1,6 +1,7 @@
 #ifndef PROYECTOFINAL_PEDIDOSVIEW_H
 #define PROYECTOFINAL_PEDIDOSVIEW_H
 #include "PedidosManager.h"
+#include "../proveedor/Inventario.h"
 #include <string>
 #include <iostream>
 #include <vector>
@@ -43,7 +44,7 @@ private:
 public:
     void verPedidosEnCamino(){
         vector<Pedido> pedidosConsultados = pedidosManager.verPedidosPorEstado("En camino");
-        cout << "[[Pedidos en camino]] "<<endl;
+        cout << "\t\t[[Pedidos en camino]] "<<endl;
         for (auto & pedidosConsultado : pedidosConsultados) {
             cout << "ID: "<<pedidosConsultado.getId();
             cout << "\t Nombre del producto: "<<pedidosConsultado.getProducto().getNombreProducto();
@@ -62,6 +63,7 @@ public:
             cout << "1) Ver pedidos en camino" << endl;
             cout << "2) Cambiar estatus de pedido por ID" << endl;
             cout << "3) Hacer Pedido: "<<endl;
+            cout << "4) Ver inventario: " << endl;
             cout << "Ingresa no para salir" << endl;
             cin >> opcion;
             if (opcion == "1") {
@@ -79,12 +81,16 @@ public:
             if (opcion == "3"){
                 string nombre;
                 int cantidad;
-                cout << "Dame el nombre del producto: ", cin >> nombre;
+                cin.ignore(32767,'\n');
+                cout << "Dame el nombre del producto: ", getline(cin,nombre);
                 cout << "Dame la cantidad: ", cin >> cantidad;
                 Producto prod = Producto();
                 prod.setNombreProducto(nombre);
                 prod.setCantidad(cantidad);
                 pedidosManager.hacerPedido(prod,"Viernes");
+            }
+            if (opcion == "4"){
+             cout << "Mostrar inventario";
             }
         }
     }

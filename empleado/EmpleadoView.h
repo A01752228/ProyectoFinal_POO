@@ -5,6 +5,7 @@
 #include "RecursosHumanosManager.h"
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 using namespace std;
 class EmpleadoView {
@@ -55,7 +56,6 @@ public:
         manager = RecursosHumanosManager();
         crearEmpleadosPredeterminados();
     }
-
     void menu(){
         string opcion = "1";
         while (opcion !=  "no"){
@@ -96,9 +96,10 @@ public:
             string telefono;
             string direccion;
             float  sueldo;
-            cout << "Ingresa el nombre de un empleado: ", cin >> nombre;
-            cout << "Ingresa el telefono de un empleado: ", cin >> telefono;
-            cout << "Ingresa la direccion de un empleado: ", cin >> direccion;
+            cin.ignore(32767,'\n');
+            cout << "Ingresa el nombre de un empleado: ", getline(cin,nombre);
+            cout << "Ingresa el telefono de un empleado: ", getline(cin,telefono);
+            cout << "Ingresa la direccion de un empleado: ", getline(cin,direccion);
             cout << "Ingresa la sueldo de un empleado: ", cin >> sueldo;
             cout << "Deseas agregar otro empleado: (y/n): ", cin >> opcion;
             emp.setName(nombre);
@@ -108,7 +109,6 @@ public:
             manager.agregarEmpleado(emp);
         }
     }
-
     void verEmpleados() {
         for (auto & empleado : manager.getEmpleados()) {
             cout <<"---------------------------"<< endl;

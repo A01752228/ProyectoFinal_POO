@@ -16,7 +16,6 @@ public:
     PedidosManager() {
         lastId = 1;
     }
-
     string hacerPedido(const Producto& productoApedir, const string& fechaDeEntrega){
         Pedido pedido = Pedido();
         pedido.setId(lastId);
@@ -29,7 +28,6 @@ public:
         
         return "El pedido se realizó correctamente";
     }
-
     string  cancelarPedidoPorId(long id) {
         for (int i = 0; i < pedidos.size(); ++i) {
             if (pedidos.at(i).getId() == id){
@@ -37,7 +35,6 @@ public:
             }
         }
     }
-
     void cambiarEstadoDePedido(long id, const string& nuevoEstado){
         for (int i = 0; i < pedidos.size(); ++i) {
             if (pedidos.at(i).getId() == id){
@@ -45,7 +42,6 @@ public:
             }
         }
     }
-
     vector<Pedido> verPedidosPorEstado(const string& estadoDelPedido){
         vector<Pedido> pedidosPorEstado;
         for (int i = 0; i < pedidos.size(); ++i) {
