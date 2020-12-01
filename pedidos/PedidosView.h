@@ -53,16 +53,14 @@ private:
         pedidosManager.hacerPedido(prod5,"Jueves");
     }
 
-    /*void productosPredeterminados(){
+    void productosPredeterminados(){
             Producto prod1 = Producto();
             Proveedor pro;
             prod1.setNombreProducto("Celulares");
             prod1.setCantidad(40);
             prod1.setPrecio(20000);
-            pedidosManager.agregarProveedor("Roberto", "Celulares", 0, false, 5);
-            prod1.setNombreProveedor("Roberto");
             inventario.agregarProducto(prod1);
-        }*/
+        }
 public:
     void verPedidosEnCamino(){
         vector<Pedido> pedidosConsultados = pedidosManager.verPedidosPorEstado("En camino");
@@ -82,7 +80,7 @@ public:
     }
     void menu(){
         string opcion;
-        //productosPredeterminados();
+        productosPredeterminados();
         while (opcion !=  "no") {
             cout << "Que quiere visualizar " << endl;
             cout << "1) Ver pedidos en camino" << endl;

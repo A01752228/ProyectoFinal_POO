@@ -23,7 +23,7 @@ int main() {
         cin >> opcion;
         if (opcion == 1){
             cout << "Ingrese la contrasena de 5 digitos \t"; cin >> intento;
-            if (contrasena = intento){
+            if (contrasena == intento){
                 EmpleadoView empleadoView = EmpleadoView();
                 empleadoView.menu();
             }
@@ -33,12 +33,12 @@ int main() {
         }
         else if (opcion == 2){
             cout << "Ingrese la contrasena de 5 digitos \t"; cin >> intento;
-            if (contrasena = intento){ 
+            if (contrasena == intento){ 
                 PedidosView pedidosView = PedidosView(PedidosManager(Inventario()));
                 pedidosView.menu();
             }
             else{
-                cout << "Contrasena incorrecta, intente de nuevo";
+                cout << "Contrasena incorrecta, intente de nuevo" << endl;
             }
         }
         else if(opcion == 3){
