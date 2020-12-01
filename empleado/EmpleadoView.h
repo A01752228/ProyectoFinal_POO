@@ -62,7 +62,7 @@ public:
             cout << "\nBienvenido al menu de empleados" << endl;
             cout << "Opciones:" << endl;
             cout << "1) Agregar empleado: " << endl;
-            cout << "2) Ver empleados empleado: " << endl;
+            cout << "2) Ver empleados: " << endl;
             cout << "3) Eliminar empleado por nombre: "<< endl;
             cout << "4) Eliminar empleado por ID: " << endl;
             cout << "Ingresa no para salir" << endl;

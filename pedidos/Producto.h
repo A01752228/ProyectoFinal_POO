@@ -12,7 +12,7 @@ private:
     string nombreProducto;
     int cantidad;
     float precio;
-    vector <Proveedor> proveedores;
+    string nombreProveedor;
 
 public:
 
@@ -48,12 +48,11 @@ public:
         Producto::precio = precio;
     }
 
-    const vector<Proveedor> &getProveedores() const {
-        return proveedores;
+    string getNombreProveedor() {
+    	return this->nombreProveedor;
     }
-
-    void setProveedores(const vector<Proveedor> &proveedores) {
-        Producto::proveedores = proveedores;
+    void setNombreProveedor(string nombreProveedor) {
+    	this->nombreProveedor = nombreProveedor;
     }
 };
 #endif //PROYECTOFINAL_PRODUCTO_H

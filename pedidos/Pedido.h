@@ -13,6 +13,8 @@ private:
     Producto producto;
     string fechaEntrega;
     string status;
+    string nombreProveedor;
+
 public:
     const Producto &getProducto() const {
         return producto;
@@ -45,7 +47,12 @@ public:
     void setStatus(const string &status) {
         Pedido::status = status;
     }
-
+    string getNombreProveedor() {
+    	return this->nombreProveedor;
+    }
+    void setNombreProveedor(string nombreProveedor) {
+    	this->nombreProveedor = nombreProveedor;
+    }
 };
 
 
