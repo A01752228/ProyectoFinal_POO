@@ -75,9 +75,6 @@ public:
     vector<Proveedor> getProveedores() {
     return proveedores;
     }
-    void setProveedores(vector<Proveedor> proveedores) {
-    	this->proveedores = proveedores;
-    }
 
     Proveedor getProveedorPorNombre(string nombre){
         for (int i = 0; i < proveedores.size(); i++) {
